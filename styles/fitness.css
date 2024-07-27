@@ -6,11 +6,18 @@ body{
 .banner{
     width: 100%;
     height: 100%;
-    background:rgb(17, 17, 17);
-    opacity: 0.9;
-    background-blend-mode: overlay;
-    
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 280%);
 }
+    main{
+    width:100%;
+    height: 100%;
+    background-color: black;
+}    
+
+    
+    
+    
+
 /*navbar style*/
 .navbar{
     display: flex;
@@ -55,8 +62,310 @@ body{
     background-color: rgb(230, 83, 60);
 }
 .nav-title{
-    color: rgb(211, 51, 26);
+    color: #d3331a;
     font-size: 2.5rem;
     font-weight: 800;
 
+}
+/*banner style*/
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 200px;
+}
+.banner-content{
+    margin-top: -10px;
+}
+.banner-title{
+    font-size: 5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.banner-description{
+    color: lightgrey;
+    font-size: 1rem;
+    margin-top: 0;
+    
+}
+.btn-1{
+    color: white;
+    background-color: rgb(230, 83, 60);
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    border: none;
+}
+.btn-2{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+.banner-img{
+    position: relative;
+    z-index: 1;
+}
+.tutorial{
+    width: 206px;
+    height: 100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(48, 48, 48, 0.54);
+    position: absolute;
+    top: 415px;
+    left: -105px;
+    
+}
+.round{
+    background-color: rgba(255, 55, 0, 0.879);
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    
+}
+.tutorial-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.number{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 900;
+    margin: 0;
+}
+.description{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+}
+.video{
+    width: 193px;
+    height: 98px;
+    position: absolute;
+    top: 140px;
+    right: -50px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/*habit section style*/
+.habit{
+    width: 100%;
+    height: 100%;
+   background-color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 40px; 
+
+}
+.habit-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.habit-img img{
+    border-radius: 50%;
+    
+}
+.habit-content{
+    height: max-content;
+    text-align: center;
+    margin: 0 auto;
+}
+.habit-title{
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.habit-description{
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.img-title{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+.img-description{
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+}
+/*habit section style for small device*/
+@media screen and (max-width:576px) {
+    .habit-img{
+        flex-direction: column;
+    }
+    
+}
+/*run section style*/
+.run{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.run-container{
+    width: 1060px;
+    height: 371px;
+    margin: 50px 50px 0 50px;
+    background-color:rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 18px;
+}
+.run-img img{
+    width: 90%;
+    height: 90%;
+    border-radius: 18px;
+}
+.run-img{
+    width: 366px;
+    height: 312px;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.run-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+}
+.run-title{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.run-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+/*run section style for small device*/
+@media screen and (max-width:576px) {
+    .run-container{
+        flex-direction: column;
+    }
+    
+}
+/*bmi section style*/
+.bmi{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    
+}
+.bmi-container{
+    width: 100%;
+    height: 487px;
+    background-color: rgb(64, 62, 62);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    
+}
+.bmi-title{
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.bmi-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.bmi-chart table{
+    border-collapse: collapse;
+    color: lightgrey;
+    text-align: left;
+} 
+.bmi-chart td,th{
+    border: 2px solid grey;
+    padding: 5px 10px;
+}
+.bmi-form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.bmi-form input[type="text"], input[type="number"] {
+    background-color: #9aa0a6;
+    width: calc(100% - 30px);
+    height: 40px;
+    border-radius: 10px;
+
+
+}
+/*meet section style*/
+.meet{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.meet-container{
+    width: 1000px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(37, 36, 36);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+.meet-img img{
+    width: 95%;
+    height: 85%;
+    border-radius: 20px;
 }
