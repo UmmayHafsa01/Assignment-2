@@ -166,6 +166,47 @@ body{
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.1);
 }
+/*banner style for small device*/
+@media screen and (max-width:576px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        gap: 168px;
+        align-items: center;
+    }
+    .menu-icon{
+        width: 35px;
+        height: 5px;
+        background-color:white;
+        margin: 6px 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tutorial{
+        width: 155px;
+        height: 72px;
+        top: 262px;
+        left: 2px;
+
+    }
+    .number{
+        font-size: 1.5rem;
+    }
+    .video{
+        width: 145px;
+        height: 74px;
+        top: 73px;
+        left: 194px;
+    }
+    
+}
 /*habit section style*/
 .habit{
     width: 100%;
@@ -237,8 +278,8 @@ body{
 
 }
 .run-container{
-    width: 1060px;
-    height: 371px;
+    width: 100%;
+    height: 100%;
     margin: 50px 50px 0 50px;
     background-color:rgb(34, 34, 34);
     display: flex;
@@ -269,7 +310,7 @@ body{
 }
 .run-title{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: left;
     margin-bottom: 0;
@@ -285,7 +326,19 @@ body{
 /*run section style for small device*/
 @media screen and (max-width:576px) {
     .run-container{
+        max-width: 353px;
+        max-height: 531px;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .run-content{
+        max-width: 287px;
+        max-height: 264px;
+    }
+    .run-img{
+        max-width:287px ;
+        max-height:170px ;
     }
     
 }
@@ -358,7 +411,10 @@ body{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
 }
-.bmi-form input[type="text"], input[type="number"] {
+#box-3{
+    grid-column: span 2;
+}
+.bmi-form label input[type="text"], input[type="number"] {
     background-color: #9aa0a6;
     width: calc(100% - 30px);
     height: 40px;
