@@ -325,10 +325,33 @@ body{
     border-collapse: collapse;
     color: lightgrey;
     text-align: left;
+    
 } 
 .bmi-chart td,th{
     border: 2px solid grey;
     padding: 5px 10px;
+}
+.calculate-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 50px;
+    
+}
+.chart-title{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+.form-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 14px;
+
 }
 .bmi-form{
     display: grid;
