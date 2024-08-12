@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 /*Shared styles*/
 body{
     font-family:Inter;
@@ -6,7 +7,7 @@ body{
 .banner{
     width: 100%;
     height: 100%;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 280%);
+    background: linear-gradient(360deg, rgb(17, 17, 17),rgba(27, 27, 27, 0) 900%);
 }
     main{
     width:100%;
@@ -74,17 +75,28 @@ body{
 .banner-content{
     margin-top: -10px;
 }
+
+#shape{
+    font-family:'Miama', sans-serif ;
+    font-weight: 500;
+    font-size: 5.5rem;
+   
+    
+}
+
 .banner-title{
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 5.5rem;
+    font-weight: 800;
+    position: relative;
     color: white;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 .banner-description{
     color: lightgrey;
     font-size: 1rem;
-    margin-top: 0;
+    margin-top: 65px;
+    margin-bottom: 20px;
     
 }
 .btn-1{
