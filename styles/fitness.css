@@ -60,8 +60,8 @@ body{
     background-color: rgb(230, 83, 60);
 }
 .nav-title{
-    color: #d3331a;
-    font-size: 2.5rem;
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
     font-weight: 800;
 
 }
@@ -73,31 +73,65 @@ body{
     margin:0 200px;
 }
 .banner-content{
-    margin-top: -10px;
-}
-
-#shape{
-    font-family:'Miama', sans-serif ;
-    font-weight: 500;
-    font-size: 5.5rem;
-   
-    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-left: 0;
 }
 
 .banner-title{
-    font-size: 5.5rem;
-    font-weight: 800;
-    position: relative;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
-    margin-top: 0;
+    position: relative;
+    margin-top: 150px;
     margin-bottom: 20px;
+    
+}
+.get{
+    position: absolute;
+    top: -234px;
+    left: -10px;
+}
+
+.shape{
+    font-family:'Miama', sans-serif ;
+    font-weight: 500;
+    font-size: 7rem;
+    position: absolute;
+    top: -198px;
+    left: -5px;
+       
+}
+.stay{
+    position: absolute;
+    top: -145px;
+    left: 163px;
+}
+.healthy{
+    position: absolute;
+    top: -65px;
+    left: -5px;
+
 }
 .banner-description{
     color: lightgrey;
     font-size: 1rem;
-    margin-top: 65px;
-    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-bottom: 0px;
     
+}
+.banner-button{
+    margin-top:15px ;
 }
 .btn-1{
     color: white;
@@ -193,11 +227,52 @@ body{
     .navbar ul{
         display: none;
     }
+
     .banner-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .banner-content{
+        width: 352px;
+        margin-left: -27px;
+        align-items: center;
+    }
+    .banner-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .get{
+        top:-186px ;
+        left: -182px;
+    }
+    .shape{
+        font-size: 3rem;
+        top: -174px;
+        left: -179px;
+    }
+    .stay{
+        top: -151px;
+        left:-103px ;
+    }
+    .healthy{
+        top:-113px ;
+        left: -177px;
+    }
+    .banner-description{
+        width: 274px;
+        height: 96px;
+        text-align: left;
+        margin-top: -76px;
+        margin-left: -76px;
+    }
+    .btn-1, .btn-2{
+        width: 169px;
+        height: 54px;
     }
     .tutorial{
         width: 155px;
@@ -628,6 +703,7 @@ body{
     .news-container{
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
     
 }
