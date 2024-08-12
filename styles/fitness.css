@@ -246,7 +246,7 @@ body{
     text-align: center;
 
 }
-.img-title{
+.habit-img-title{
     color: white;
     font-size: 1.5rem;
     text-align: center;
@@ -324,13 +324,15 @@ body{
 /*run section style for small device*/
 @media screen and (max-width:576px) {
     .run-container{
+        
         max-width: 353px;
-        max-height: 531px;
+        max-height: 540px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .run-content{
+    margin-top: 20px;
         max-width: 287px;
         max-height: 264px;
     }
@@ -434,6 +436,7 @@ body{
     text-align: left;
     
 }
+/*bmi section style for small screen*/
 @media screen and (max-width:576px) {
     .bmi-container{
         flex-direction: column;
@@ -508,7 +511,7 @@ body{
     font-weight: 600;
     margin-bottom: 0;
 }
-/*meet section for small screen*/
+/*meet section style for small screen*/
 @media screen and (max-width:576px){
     .meet-container{
         display: grid;
@@ -608,6 +611,14 @@ body{
     margin: 0 130px;
 
 }
+/*news section style for small screen*/
+@media screen and (max-width:576px) {
+    .news-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 /*footer style*/
 .footer{
     width: 100%;
@@ -627,8 +638,8 @@ body{
 
 }
 .content-1{
-    width: 443px;
-    height: 176px;
+    width: 50%;
+    height: 100%;
 }
 .content-1 h1{
     color: rgb(230, 83, 60);
@@ -668,3 +679,12 @@ body{
     text-align: center;
 
 }
+/*footer style for small screen*/
+@media screen and (max-width:576px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
